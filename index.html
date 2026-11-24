@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal academic portfolio of Yuxi Li, Computer Science student at Xi'an Jiaotong-Liverpool University." />
+  <meta name="author" content="Yuxi Li" />
+  <title>Yuxi Li — Computer Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🛰️</text></svg>" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#home">YL<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Xi'an Jiaotong-Liverpool University · Academy of AIAT</p>
+        <h1>Hi, I'm <span class="gradient">Yuxi Li</span>.</h1>
+        <p class="typed"><span id="typed"></span><span class="caret">|</span></p>
+        <p class="lede">
+          Computer Science student working at the intersection of computer networks,
+          distributed systems and applied machine learning. I like taking protocols
+          apart, measuring what really happens on the wire, and building data
+          pipelines that scale beyond a single machine.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View my work</a>
+          <a class="btn ghost" href="https://github.com/Yiwan-Da" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <ul class="hero-meta">
+          <li><strong>8</strong> modules in progress</li>
+          <li><strong>5</strong> networking &amp; distributed-systems projects</li>
+          <li><strong>Python · Java · Spark</strong> daily drivers</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2><span class="num">01</span> About me</h2>
+      <div class="grid two">
+        <div class="card reveal">
+          <h3>What I do</h3>
+          <p>
+            I am an undergraduate at XJTLU's Academy of Artificial Intelligence and
+            Advanced Technology. My current focus is <strong>CSI205TC Networking and
+            Distributed Computing</strong>, where I build socket-based systems,
+            MapReduce pipelines and Spark applications from first principles.
+          </p>
+          <p>
+            Outside coursework I enjoy network measurement — packet captures, latency
+            budgets and protocol behaviour — and I am slowly working towards a final
+            year project on distributed data processing.
+          </p>
+        </div>
+        <div class="card reveal">
+          <h3>At a glance</h3>
+          <ul class="facts">
+            <li><span>Location</span><strong>Taicang, Jiangsu, China</strong></li>
+            <li><span>Programme</span><strong>Computer Science, XJTLU</strong></li>
+            <li><span>Focus</span><strong>Networks · Distributed computing · ML</strong></li>
+            <li><span>Languages</span><strong>Chinese, English</strong></li>
+            <li><span>Currently reading</span><strong>Designing Data-Intensive Applications</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2><span class="num">02</span> Education</h2>
+      <div class="timeline">
+        <article class="reveal">
+          <div class="dot"></div>
+          <div class="when">2024 — present</div>
+          <h3>Xi'an Jiaotong-Liverpool University</h3>
+          <p class="where">Academy of Artificial Intelligence and Advanced Technology · Taicang</p>
+          <p>
+            Coursework covers computer networks, operating systems, data structures,
+            databases and distributed computing. Recent modules: CSI205TC Networking
+            and Distributed Computing, CSI201TC Data Structures.
+          </p>
+        </article>
+        <article class="reveal">
+          <div class="dot"></div>
+          <div class="when">2021 — 2024</div>
+          <h3>Senior High School</h3>
+          <p class="where">STEM track · China</p>
+          <p>
+            Physics, mathematics and computer science focus; first exposure to Python
+            and to competitive programming problems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2><span class="num">03</span> Skills</h2>
+      <div class="grid three">
+        <div class="card reveal">
+          <h3>Networking</h3>
+          <p class="muted">Sockets, TCP/UDP, HTTP, DNS, subnetting, Wireshark and tcpdump analysis.</p>
+          <div class="bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Programming</h3>
+          <p class="muted">Python, Java, JavaScript, Bash; data structures and clean-code practices.</p>
+          <div class="bar"><span style="width: 88%"></span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Distributed data</h3>
+          <p class="muted">Hadoop MapReduce, HDFS, Apache Spark, Spark MLlib, PySpark workflows.</p>
+          <div class="bar"><span style="width: 78%"></span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Machine learning</h3>
+          <p class="muted">Feature engineering, cross-validation, classification metrics and error analysis.</p>
+          <div class="bar"><span style="width: 72%"></span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Systems</h3>
+          <p class="muted">Linux, virtualisation (VMware), SSH automation, Git and reproducible experiments.</p>
+          <div class="bar"><span style="width: 80%"></span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Web</h3>
+          <p class="muted">Semantic HTML, modern CSS, vanilla JavaScript, GitHub Pages deployment.</p>
+          <div class="bar"><span style="width: 70%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2><span class="num">04</span> Selected projects</h2>
+      <div class="grid two">
+        <article class="card project reveal">
+          <p class="tag">CSI205TC · Python</p>
+          <h3>Video streaming over TCP and UDP</h3>
+          <p>
+            A socket-programming video streamer with a custom chunked UDP protocol,
+            NACK-based repair and clock-synchronised latency measurement, benchmarked
+            against TCP and analysed in Wireshark.
+          </p>
+          <p class="metric">25 fps · 10 Mbit/s · sub-2 ms LAN latency</p>
+        </article>
+        <article class="card project reveal">
+          <p class="tag">CSI205TC · Hadoop / Spark</p>
+          <h3>Word count at scale</h3>
+          <p>
+            The same corpus processed by a hand-written Hadoop MapReduce job and by
+            PySpark, comparing programming model, shuffle behaviour and wall-clock
+            performance on a single-node cluster.
+          </p>
+          <p class="metric">HDFS-backed · combiner vs no combiner</p>
+        </article>
+        <article class="card project reveal">
+          <p class="tag">CSI205TC · Spark MLlib</p>
+          <h3>Predictive modelling on tabular data</h3>
+          <p>
+            An end-to-end MLlib pipeline: schema-aware ingestion, missing-value
+            handling, one-hot encoding, cross-validated logistic regression and random
+            forest, evaluated with ROC-AUC, PR curves and confusion matrices.
+          </p>
+          <p class="metric">Cross-validated · imbalanced-class analysis</p>
+        </article>
+        <article class="card project reveal">
+          <p class="tag">CSI205TC · Python</p>
+          <h3>MapReduce from scratch</h3>
+          <p>
+            A dependency-free MapReduce engine with explicit map, shuffle, partition
+            and reduce stages, an in-mapper combiner, and a unit-test suite that proves
+            combiner equivalence.
+          </p>
+          <p class="metric">Deterministic · unit tested</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2><span class="num">05</span> Contact</h2>
+      <div class="card contact reveal">
+        <p>
+          The fastest way to reach me is GitHub. I am always happy to talk about
+          network measurement, distributed systems or a good debugging story.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/Yiwan-Da" target="_blank" rel="noopener">github.com/Yiwan-Da</a>
+          <a class="btn ghost" href="mailto:Yuxi.Li24@student.xjtlu.edu.cn">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Yuxi Li · Built with vanilla HTML, CSS and JavaScript · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
